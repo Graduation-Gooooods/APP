@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">mainhand</string>
+    <string name="imageView_main">imageView_main</string>
+    <string name="editTextNumber3">third</string>
+    <string name="editTextNumber1">first</string>
+    <string name="editTextNumber2">second</string>
+    <string name="editTextNumber4">fourth</string>
+    <string name="editTextNumber5">fifth</string>
+    <string name="textView1">First tension measurement</string>
+</resources>

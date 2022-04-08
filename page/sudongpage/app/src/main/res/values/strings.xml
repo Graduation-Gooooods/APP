@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">sudongpage</string>
+
+    <string name="editTextNumber1">first</string>
+    <string name="editTextNumber2">second</string>
+    <string name="editTextNumber3">third</string>
+    <string name="editTextNumber4">fourth</string>
+    <string name="editTextNumber5">fifth</string>
+    <string name="textView1">default is 0step</string>
+    <string name="textView2">default is 0</string>
+</resources>

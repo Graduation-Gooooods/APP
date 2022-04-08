@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Trainmode</string>
+    <string name="train_explain">Start~Stop시 횟수, 목표치, 가동시간</string>
+    <string name="Button">Start/Stop</string>
+</resources>

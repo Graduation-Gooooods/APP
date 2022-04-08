@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">graduation</string>
+    <string name="restart">Restart</string>
+    <string name="New">New</string>
+    <string name="Auto">Auto</string>
+    <string name="Passitive">Passitive</string>
+    <string name="Train">Train</string>
+    <string name="Textbox">-------모드선택-------</string>
+    <string name="button1">Button</string>
+    <string name="button2">Button</string>
+    <string name="button3">Button</string>
+    <string name="title">Title</string>
+    <string name="content">content</string>
+    <string name="editTextNumber1">first</string>
+    <string name="editTextNumber2">second</string>
+    <string name="editTextNumber3">third</string>
+    <string name="editTextNumber4">fourth</string>
+    <string name="editTextNumber5">fifth</string>
+    <string name="textView1">default is 0step</string>
+    <string name="textView2">default is 0</string>
+</resources>
