@@ -6,32 +6,13 @@
     android:layout_height="match_parent"
     tools:context=".Firstpage">
 
-    <Button
-        android:layout_width="70dp"
-        android:layout_height="48dp"
-        android:onClick="onBackButtonClicked"
-        android:text="@string/Back"
-        android:textAllCaps="false"
-        android:textColor="#455A64"
-        android:textSize="11sp"
-        app:backgroundTint="#E6D564"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.046"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.023"
-        tools:ignore="MissingConstraints,UsingOnClickInXml"
-        />
-
     <LinearLayout
         android:id="@+id/linearLayout2"
-        android:layout_width="357dp"
-        android:layout_height="270dp"
-        android:layout_marginTop="80dp"
+        android:layout_width="327dp"
+        android:layout_height="249dp"
+        android:layout_marginTop="16dp"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.574"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints">
@@ -42,7 +23,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
             android:layout_marginLeft="10dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="10dp"
             android:text="@string/textview1"
             android:textColor="#000000"
             android:textSize="20sp"
@@ -92,15 +73,14 @@
 
     <LinearLayout
         android:id="@+id/linearLayout"
-        android:layout_width="365dp"
-        android:layout_height="wrap_content"
+        android:layout_width="327dp"
+        android:layout_height="213dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.673"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
-        app:layout_constraintVertical_bias="0.305">
+        app:layout_constraintVertical_bias="0.122">
 
         <TextView
             android:id="@+id/textView2"
@@ -156,11 +136,12 @@
         android:layout_marginBottom="16dp"
         android:onClick="firstpagenext"
         android:text="@string/next"
+        app:backgroundTint="#DCD086"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.869"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout"
-        app:layout_constraintVertical_bias="1.0"
+        app:layout_constraintVertical_bias="0.354"
         tools:ignore="OnClick,UsingOnClickInXml" />
 </androidx.constraintlayout.widget.ConstraintLayout>

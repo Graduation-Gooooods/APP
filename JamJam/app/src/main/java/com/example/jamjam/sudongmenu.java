@@ -41,7 +41,7 @@ public class sudongmenu extends AppCompatActivity {
             @Override
             public void onStopTrackingTouch(SeekBar seekBar) {
 
-                textView.setText(format("선택 값은 %d 입니다.", seekBar.getProgress()));
+                textView.setText(format("%d 번째 손가락입니다.", seekBar.getProgress()));
             }
 
         });
@@ -61,7 +61,7 @@ public class sudongmenu extends AppCompatActivity {
             @SuppressLint("DefaultLocale")
             @Override
             public void onStopTrackingTouch(SeekBar seekBar2) {
-                textView2.setText(format("선택 값은 %d 입니다.", seekBar2.getProgress()));
+                textView2.setText(format("%d단계 입니다.", seekBar2.getProgress()));
 
             }
 

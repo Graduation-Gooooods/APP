@@ -28,19 +28,19 @@
     <string name="editTextNumber3">third</string>
     <string name="editTextNumber4">fourth</string>
     <string name="editTextNumber5">fifth</string>
-    <string name="textView1">default is 0step</string>
-    <string name="textView2">default is 0</string>
+    <string name="textView1">finger Number</string>
+    <string name="textView2">default is 0 step</string>
     <string name="RECORD">Record</string>
 
 
     <string name="restart">restart</string>
     <string name="New">New</string>
     <string name="Auto">Auto</string>
-    <string name="Passitive">Passitive</string>
+    <string name="Manual">Manual</string>
     <string name="Train">Train</string>
     <string name="Textbox">-------모드선택-------</string>
     <string name="button1" tools:keep="@string/button1">Auto</string>
-    <string name="button2">Passitive</string>
+    <string name="button2">Manual</string>
     <string name="button3">Train</string>
     <string name="content" tools:keep="@string/content">content</string>
     <string name="Back">Back</string>
@@ -52,8 +52,8 @@
 
     <string name="train_explain">Start~Stop시 횟수, 목표치, 가동시간</string>
     <string name="Button">Start/Stop</string>
-    <string name="autotextview">세부단계는 0입니다.</string>
-
+    <string name="autotextview">단계설정</string>
+    <string name="mainhand_textview">finger tension measurement</string>
 
 
 </resources>

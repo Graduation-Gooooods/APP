@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--suppress ALL -->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -10,7 +11,7 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="35dp"
-        android:layout_marginTop="10dp">
+        android:layout_marginTop="5dp">
 
         <Button
             android:layout_width="70dp"
@@ -32,7 +33,6 @@
             android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
             android:layout_marginEnd="10dp"
-
             android:layout_marginRight="10dp"
             android:onClick="Newhand"
 
@@ -46,8 +46,8 @@
     </RelativeLayout>
 
     <LinearLayout
-        android:layout_width="357dp"
-        android:layout_height="470dp"
+        android:layout_width="300dp"
+        android:layout_height="330dp"
         android:layout_marginStart="25dp"
         android:layout_marginLeft="25dp"
         android:layout_marginTop="2dp"
@@ -58,9 +58,9 @@
 
         <Button
             android:id="@+id/Auto_btn"
-            android:layout_width="358dp"
-            android:layout_height="100dp"
-            android:layout_marginBottom="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+
             android:layout_weight="1"
             android:onClick="Auto_btnClicked"
             android:text="@string/Auto"
@@ -71,13 +71,13 @@
 
         <Button
             android:id="@+id/Passitive_btn"
-            android:layout_width="358dp"
-            android:layout_height="100dp"
-            android:layout_marginBottom="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+
             android:layout_weight="1"
 
             android:onClick="Passitive_btnClicked"
-            android:text="@string/Passitive"
+            android:text="@string/Manual"
             android:textAllCaps="false"
             android:textSize="30sp"
             app:backgroundTint="#5562AC"
@@ -85,8 +85,8 @@
 
         <Button
             android:id="@+id/Train_btn"
-            android:layout_width="358dp"
-            android:layout_height="100dp"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
             android:layout_weight="1"
             android:onClick="Train_btnClicked"
             android:text="@string/Train"
@@ -106,28 +106,27 @@
             android:id="@+id/textView"
             android:layout_width="match_parent"
             android:layout_height="35dp"
-            android:layout_marginTop="25dp"
             android:gravity="center"
             android:text="@string/Textbox"
             android:textColor="#33364C"
-            android:textSize="30sp" />
+            android:textSize="25sp" />
 
         <LinearLayout
             style="?android:attr/buttonBarStyle"
             android:layout_width="match_parent"
-            android:layout_height="86dp"
+            android:layout_height="80dp"
             android:orientation="horizontal">
 
             <RadioGroup
                 android:id="@+id/radioGroup"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="3dp"
                 android:orientation="horizontal">
 
                 <RadioButton
                     android:id="@+id/radioButton"
-                    android:layout_width="129dp"
+                    android:layout_width="110dp"
                     android:layout_height="77dp"
                     android:layout_gravity="center_horizontal"
                     android:layout_marginStart="10dp"
@@ -141,7 +140,7 @@
 
                 <RadioButton
                     android:id="@+id/radioButton2"
-                    android:layout_width="129dp"
+                    android:layout_width="110dp"
                     android:layout_height="77dp"
                     android:layout_gravity="center_horizontal"
                     android:background="@drawable/selector_button"
@@ -152,34 +151,63 @@
 
                 <RadioButton
                     android:id="@+id/radioButton3"
-                    android:layout_width="129dp"
+                    android:layout_width="110dp"
                     android:layout_height="77dp"
                     android:layout_gravity="center_horizontal"
-                    android:background="@drawable/selector_button"
-                    android:layout_marginRight="10dp"
                     android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/selector_button"
                     android:button="@null"
                     android:text="@string/button3"
                     android:textAlignment="center"
-                    android:textColor="@drawable/selector_text"
-                    />
+                    android:textColor="@drawable/selector_text" />
             </RadioGroup>
 
 
         </LinearLayout>
 
-        <Button
-            android:id="@+id/button2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="bottom"
-            android:layout_marginStart="280dp"
-            android:layout_marginLeft="280dp"
-            android:layout_marginTop="15dp"
-            android:onClick="graphclick"
-            android:text="@string/RECORD"
-            app:backgroundTint="#DCD086"
-            tools:ignore="MissingConstraints,UsingOnClickInXml,TextContrastCheck" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="69dp"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/btn_stt_start"
+                android:layout_width="65dp"
+                android:layout_height="57dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/mic"
+                android:onClick="btn_stt_start"
+                tools:ignore="SpeakableTextPresentCheck,ContentDescription" />
+
+            <EditText
+                android:id="@+id/txtInMsg"
+                android:layout_width="149dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:inputType="textPersonName" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_gravity="bottom"
+                android:layout_marginStart="17dp"
+                android:layout_marginLeft="17dp"
+                android:layout_marginBottom="5dp"
+
+                android:onClick="graphclick"
+                android:text="@string/RECORD"
+                android:textSize="12sp"
+                app:backgroundTint="#DCD086"
+                tools:ignore="MissingConstraints,UsingOnClickInXml,TextContrastCheck" />
+
+
+        </LinearLayout>
 
     </LinearLayout>
 

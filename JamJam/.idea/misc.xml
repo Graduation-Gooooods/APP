@@ -7,16 +7,16 @@
         <entry key="..\:/Users/jung_/AndroidStudioProjects/JamJam/app/src/main/res/drawable-v24/modechangeon.xml" value="0.1" />
         <entry key="..\:/Users/jung_/AndroidStudioProjects/JamJam/app/src/main/res/drawable-v24/selector_button.xml" value="0.1" />
         <entry key="..\:/Users/jung_/AndroidStudioProjects/JamJam/app/src/main/res/drawable-v24/selector_text.xml" value="0.1" />
-        <entry key="..\:/Users/jung_/AndroidStudioProjects/JamJam/app/src/main/res/layout/activity_automenu.xml" value="0.11574074074074074" />
-        <entry key="..\:/Users/jung_/AndroidStudioProjects/JamJam/app/src/main/res/layout/activity_firstpage.xml" value="0.11574074074074074" />
-        <entry key="..\:/Users/jung_/AndroidStudioProjects/JamJam/app/src/main/res/layout/activity_main.xml" value="0.11574074074074074" />
+        <entry key="..\:/Users/jung_/AndroidStudioProjects/JamJam/app/src/main/res/layout/activity_automenu.xml" value="0.22" />
+        <entry key="..\:/Users/jung_/AndroidStudioProjects/JamJam/app/src/main/res/layout/activity_firstpage.xml" value="0.22" />
+        <entry key="..\:/Users/jung_/AndroidStudioProjects/JamJam/app/src/main/res/layout/activity_main.xml" value="0.33" />
         <entry key="..\:/Users/jung_/AndroidStudioProjects/JamJam/app/src/main/res/layout/activity_mainhand.xml" value="0.25" />
-        <entry key="..\:/Users/jung_/AndroidStudioProjects/JamJam/app/src/main/res/layout/activity_recycler_main.xml" value="0.11574074074074074" />
-        <entry key="..\:/Users/jung_/AndroidStudioProjects/JamJam/app/src/main/res/layout/activity_sudongmenu.xml" value="0.11574074074074074" />
-        <entry key="..\:/Users/jung_/AndroidStudioProjects/JamJam/app/src/main/res/layout/activity_trainmenu.xml" value="0.390625" />
+        <entry key="..\:/Users/jung_/AndroidStudioProjects/JamJam/app/src/main/res/layout/activity_recycler_main.xml" value="0.25" />
+        <entry key="..\:/Users/jung_/AndroidStudioProjects/JamJam/app/src/main/res/layout/activity_sudongmenu.xml" value="0.22" />
+        <entry key="..\:/Users/jung_/AndroidStudioProjects/JamJam/app/src/main/res/layout/activity_trainmenu.xml" value="0.25" />
         <entry key="..\:/Users/jung_/AndroidStudioProjects/JamJam/app/src/main/res/layout/recyclerview_item.xml" value="0.11574074074074074" />
         <entry key="..\:/Users/jung_/AndroidStudioProjects/JamJam/app/src/main/res/layout/recyclerview_sub.xml" value="0.11574074074074074" />
-        <entry key="..\:/Users/jung_/AndroidStudioProjects/JamJam/app/src/main/res/layout/simple_spinner_item.xml" value="0.11574074074074074" />
+        <entry key="..\:/Users/jung_/AndroidStudioProjects/JamJam/app/src/main/res/layout/simple_spinner_item.xml" value="0.25" />
       </map>
     </option>
   </component>

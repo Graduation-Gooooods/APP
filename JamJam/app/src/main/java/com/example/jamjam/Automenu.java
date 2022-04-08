@@ -47,23 +47,10 @@ public class Automenu extends AppCompatActivity {
             @Override
             public void onStopTrackingTouch(SeekBar seekBar) {
 
-                textView.setText(format("선택 값은 %d 입니다.", seekBar.getProgress()));
+                textView.setText(format("%d단계 입니다.", seekBar.getProgress()));
             }
 
         });
 
-
-        Spinner spinner = findViewById(R.id.spinner);
-
-        ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item,level );
-        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        spinner.setAdapter(adapter);
-
-    }
-
-
-    public void onBackButtonClicked(View view) {
-        Toast.makeText(getApplicationContext(), "돌아가기", Toast.LENGTH_LONG).show();
-        finish();
     }
 }
