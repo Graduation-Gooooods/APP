@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="com">com</string>
+    <string name="input_send">TextView</string>
+    <string name="result_send">TextView</string>
+    <string name="server">Button</string>
+    <string name="input_server">TextView</string>
+    <string name="result_server">TextView</string>
+    <string name="send_data">보낼 데이터</string>
+    <string name="data">data</string>
+</resources>
