@@ -1,0 +1,149 @@
+package com.example.jamjam;
+
+import android.os.Bundle;
+import android.util.Log;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
+import com.android.volley.Request;
+import com.android.volley.RequestQueue;
+import com.android.volley.toolbox.StringRequest;
+import com.android.volley.toolbox.Volley;
+
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.util.HashMap;
+import java.util.Map;
+
+
+public class recycler_main extends AppCompatActivity {
+    RecyclerAdapter adapter;
+    RecyclerView recyclerView;
+    static RequestQueue requestQueue;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_recycler_main);
+
+        recyclerView = findViewById(R.id.recyclerView);
+
+
+        if (requestQueue == null) {
+            requestQueue = Volley.newRequestQueue(getApplicationContext());
+        }
+        try {
+            makeRequest();
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+        Log.d("request", "request");
+
+
+        recyclerView = findViewById(R.id.recyclerView);
+        LinearLayoutManager layoutManager = new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false);
+        recyclerView.setLayoutManager(layoutManager);
+        adapter = new RecyclerAdapter();
+        recyclerView.setAdapter(adapter);
+
+    }
+
+    public void makeRequest() throws JSONException {
+
+        String url = "http://114.71.220.163:7102/app/getdata";
+        StringRequest request = new StringRequest(Request.Method.GET, url, response -> {
+            println("응답->" + response);
+            //Log.d("GSON", "응답->" + response);
+            //processResponse(response);
+            System.out.println(response.length());
+            System.out.println((response.getClass()));
+            String rsp = response.substring(1, response.length() - 1);
+            System.out.print("****************************************");
+            System.out.println(rsp);
+            try {
+                JSONObject jsonObject = new JSONObject(response);
+                String mode = jsonObject.getString("mode");
+                String scc = jsonObject.getString("scc");
+                String ex_time = jsonObject.getString("ex_time");
+                String now_step = jsonObject.getString("now_step");
+                String date_time = jsonObject.getString("date_time");
+
+                System.out.println("mode: " + mode);
+                System.out.println("scc: " + scc);
+                System.out.println("ex_time: " + ex_time);
+                System.out.println("now_step: " + now_step);
+                System.out.println("date_time: " + date_time);
+                /*JSONArray jsonArray = jsonObject.getJSONArray(String.valueOf(response));
+
+                   // Result result = new Result();
+                    //for(int i = 0; i<jsonArray .length(); i++) {
+                        //JSONObject obj = jsonArray.getJSONObject(i);
+                        String mode = result.set_mode(jsonObject.getString("mode"));
+                        String scc = result.set_scc(jsonObject.getString("scc"));
+                        String ex_time = result.set_ex_time(jsonObject.getString("ex_time"));
+                        String now_step = result.set_now_step(jsonObject.getString("now_step"));
+                        String date_time = result.set_date_time(jsonObject.getString("date_time"));
+*/
+
+            } catch (JSONException e) {
+                e.printStackTrace();
+            }
+
+        },
+                error -> {
+                    println("에러->" + error.getMessage());
+                    Log.d("GSON", "에러-> " + error.getMessage());
+                }
+        ) {
+            protected Map<String, String> getParams() {
+                return new HashMap<>();
+            }
+        };
+        request.setShouldCache(false);
+        requestQueue.add(request);
+        //println("요청보냄");
+        Log.d("GSON", "요청보냄");
+    }
+
+    public void println(String data) {
+        Log.d("recycler_main", data);
+    }
+}
+    //@SuppressLint("NotifyDataSetChanged")
+//        public void processResponse(String response) throws JSONException {
+//            String json = ~;
+//            JSONObject jObject = new JSONObject(json);
+//
+//            String mode = jObject.getString("mode");
+//            String scc = jObject.getString("scc");
+//            String ex_time = jObject.getString("ex_time");
+//            String now_step = jObject.getString("now_step");
+//            String date_time = jObject.getString("date_time");
+//
+//            System.out.println("title: " + mode);
+//            System.out.println("url: " + scc);
+//            System.out.println("draft: " + ex_time);
+//            System.out.println("star: " + now_step);
+//            System.out.println("star: " + date_time);
+//        }
+/*
+    @SuppressLint("NotifyDataSetChanged")
+    public void processResponse(String response) {
+
+        Gson gson = new Gson();
+        recordList RecordList = gson.fromJson(response, recordList.class);
+        //println("훈련정보: "+RecordList._intergration.recordlist.size());
+        Log.d("결과", "요청보냄" + RecordList._intergration.recordlist.size());
+
+        /*for (int i = 0; i < RecordList._intergration.recordlist.size(); i++) {
+            Result result = RecordList._intergration.recordlist.get(i);
+
+
+            adapter.setItems(RecordList._intergration.recordlist);
+            adapter.notifyDataSetChanged();
+        }
+ }
+*/
