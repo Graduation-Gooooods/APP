@@ -1,0 +1,99 @@
+package com.example.jamjam;
+
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.TextView;
+import androidx.annotation.NonNull;
+import androidx.recyclerview.widget.RecyclerView;
+
+
+
+import java.util.ArrayList;
+public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ViewHolder> {
+    static class ViewHolder extends RecyclerView.ViewHolder {
+        TextView title, result1, result2, result3, date;
+
+        public ViewHolder(View itemView) {
+            super(itemView);
+            title = itemView.findViewById(R.id.Modetype);
+            result1 = itemView.findViewById(R.id.modescc);
+            result2 = itemView.findViewById(R.id.modetm);
+            result3 = itemView.findViewById(R.id.modecs);
+            date = itemView.findViewById(R.id.date_time);
+        }
+
+        public void setItem(@NonNull Result item) {
+            title.setText(item.get_mode());
+            result1.setText(item.get_scc());
+            result2.setText(String.format("%s초", item.get_ex_time()));
+            result3.setText(item.get_now_step());
+            date.setText(item.get_date_time());
+        }
+    }
+
+    ArrayList<Result> items = new ArrayList<>();
+
+    @NonNull
+    @Override
+
+    public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+        LayoutInflater inflater = LayoutInflater.from(parent.getContext());
+        View view = inflater.inflate(R.layout.recyclerview_item, parent, false);
+        return new ViewHolder(view);
+
+    }
+
+    @Override
+    public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
+        //실제 recyclerview_item 레이아웃을 변경하는 메소드
+        Result item = items.get(position);
+        holder.setItem(item);
+
+    }
+
+
+    @Override
+    public int getItemCount() {
+        return items.size();
+        //데이터 개수
+       // return (ModeResult != null? ModeResult.size() : 0);
+    }
+
+    public void addItem(Result item) {
+        items.add(item);
+        //this.ModeResult = items;
+    }
+    public void setItems(ArrayList<Result>items){
+        this.items=items;
+    }
+    public Result getItem(int position){
+        return  items.get(position);
+    }
+}
+
+
+    /*
+    static class ItemViewHolder extends RecyclerView.ViewHolder{
+
+        private final TextView textView1;
+        private final TextView textView2;
+
+        ItemViewHolder(View itemView) {
+            super(itemView);
+
+            textView1 = itemView.findViewById(R.id.textView1);
+            textView2 = itemView.findViewById(R.id.textView2);
+
+        }
+        void OnBind(Data data) {
+            textView1.setText(data.getTitle());
+            textView2.setText(data.getContent());
+
+        }
+
+        public void addItems(Result result) {
+        }
+    }
+}
+*/
