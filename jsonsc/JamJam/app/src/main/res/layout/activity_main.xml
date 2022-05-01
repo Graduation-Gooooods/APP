@@ -192,7 +192,8 @@
                 android:layout_width="149dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
-                android:inputType="textPersonName" />
+                android:inputType="textPersonName"
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
             <Button
                 android:id="@+id/button2"
@@ -202,12 +203,12 @@
                 android:layout_marginStart="17dp"
                 android:layout_marginLeft="17dp"
                 android:layout_marginBottom="5dp"
-                android:textAllCaps="false"
                 android:onClick="graphclick"
                 android:text="@string/RECORD"
+                android:textAllCaps="false"
                 android:textSize="12sp"
                 app:backgroundTint="#DCD086"
-                tools:ignore="MissingConstraints,UsingOnClickInXml,TextContrastCheck" />
+                tools:ignore="MissingConstraints,UsingOnClickInXml,TextContrastCheck,TouchTargetSizeCheck" />
 
 
         </LinearLayout>
