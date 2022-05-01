@@ -1,0 +1,50 @@
+package com.example.jamjam;
+
+public class Result {
+  private String mode;
+  private String scc;
+  private String ex_time;
+  private String now_step;
+  private String date_time;
+
+  public String get_mode() {
+    return mode;
+  }
+  public String set_mode(String mode){
+    this.mode = mode;
+    return mode;
+  }
+
+  public String get_scc() {
+    return scc;
+  }
+
+  public String set_scc(String scc) {
+    this.scc = scc;
+    return scc;
+  }
+
+  public String get_ex_time() {
+    return ex_time;
+  }
+  public String set_ex_time(String ex_time) {
+    this.ex_time = ex_time;
+    return ex_time;
+  }
+
+  public String get_now_step() {
+    return now_step;
+  }
+  public String set_now_step(String now_step) {
+    this.now_step = now_step;
+    return now_step;
+  }
+
+  public String get_date_time() {
+    return date_time;
+  }
+  public String set_date_time(String date_time) {
+    this.date_time = date_time;
+    return date_time;
+  }
+}
