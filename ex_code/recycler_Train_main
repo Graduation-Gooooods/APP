@@ -20,7 +20,7 @@ import java.util.Map;
 public class recycler_Train_main extends AppCompatActivity {
     static RequestQueue requestQueue;
 
-    RecyclerView recyclerView;
+    RecyclerView recyclerView2;
     recycler_Train_Adapter adapter;
 
 
@@ -29,8 +29,8 @@ public class recycler_Train_main extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_recycler_train_main);
 
-        recyclerView = findViewById(R.id.recyclerView);
-        recyclerView.addItemDecoration(new DividerItemDecoration(this, DividerItemDecoration.VERTICAL));
+        recyclerView2 = findViewById(R.id.recyclerView2);
+        recyclerView2.addItemDecoration(new DividerItemDecoration(this, DividerItemDecoration.VERTICAL));
 
         if (requestQueue == null) {
             requestQueue = Volley.newRequestQueue(getApplicationContext());
@@ -75,6 +75,6 @@ public class recycler_Train_main extends AppCompatActivity {
         DataInfo dataInfo = gson.fromJson(response, DataInfo.class);
 
         adapter = new recycler_Train_Adapter(getApplicationContext(), dataInfo.getTotal());
-        recyclerView.setAdapter(adapter);
+        recyclerView2.setAdapter(adapter);
     }
     }
