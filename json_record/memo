@@ -1,0 +1,16 @@
+'''
+Manual = 0 recycler_Sudong_Adapter, recycler_sudong_main / recycler_item.xml, recycler_sudon_main.xml / recyclerView3
+Auto = 1 / recycler_main, RecyclerAdapter / item.xml, recycler_main.xml / recyclerView
+Train = 2 / recycler_Train_Adapter, recycler_train_main / recyclerview_item.xml , recycler_train_main.xmo / recyclerView2
+
+과거기록 onClick 버튼 기능 -> 해당 기능 메인페이지에 넣을것
+
+
+"http://114.71.220.163:7102/app/... "
+
+
+서버 값 -> {
+        total:[
+            {
+   Object 안에 Array 들어있는지 확인할것
+   '''
