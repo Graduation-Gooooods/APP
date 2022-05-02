@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--suppress ALL -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginTop="5dp">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:text="@string/restart"
+            android:textAllCaps="false"
+            android:textColor="#455A64"
+            android:textSize="11sp"
+            app:backgroundTint="#DCD086"
+            tools:ignore="RelativeOverlap,TouchTargetSizeCheck" />
+
+        <Button
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:onClick="Newhand"
+
+            android:text="@string/New"
+            android:textAllCaps="false"
+            android:textColor="#455A64"
+            android:textSize="11sp"
+
+            app:backgroundTint="#DCD086"
+            tools:ignore="TouchTargetSizeCheck,UsingOnClickInXml" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="330dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginRight="25dp"
+        android:orientation="vertical">
+
+
+        <Button
+            android:id="@+id/Auto_btn"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+
+            android:layout_weight="1"
+            android:onClick="Auto_btnClicked"
+            android:text="@string/Auto"
+            android:textAllCaps="false"
+            android:textSize="30sp"
+            app:backgroundTint="#5562AC"
+            tools:ignore="UsingOnClickInXml,DuplicateSpeakableTextCheck" />
+
+        <Button
+            android:id="@+id/Passitive_btn"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+
+            android:layout_weight="1"
+
+            android:onClick="Passitive_btnClicked"
+            android:text="@string/Manual"
+            android:textAllCaps="false"
+            android:textSize="30sp"
+            app:backgroundTint="#5562AC"
+            tools:ignore="UsingOnClickInXml,DuplicateSpeakableTextCheck" />
+
+        <Button
+            android:id="@+id/Train_btn"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:onClick="Train_btnClicked"
+            android:text="@string/Train"
+            android:textAllCaps="false"
+            android:textSize="30sp"
+            app:backgroundTint="#5562AC"
+
+            tools:ignore="UsingOnClickInXml,DuplicateSpeakableTextCheck" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:gravity="center"
+            android:text="@string/Textbox"
+            android:textColor="#33364C"
+            android:textSize="25sp" />
+
+        <LinearLayout
+            style="?android:attr/buttonBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:orientation="horizontal">
+
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="3dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radioButton"
+                    android:layout_width="110dp"
+                    android:layout_height="77dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/selector_button"
+                    android:button="@null"
+                    android:checked="true"
+                    android:onClick="MC_AutoClick"
+                    android:text="@string/button1"
+                    android:textAlignment="center"
+                    android:textColor="@drawable/selector_text" />
+
+                <RadioButton
+                    android:id="@+id/radioButton2"
+                    android:layout_width="110dp"
+                    android:layout_height="77dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/selector_button"
+                    android:button="@null"
+                    android:onClick="MC_ManualClick"
+                    android:text="@string/button2"
+                    android:textAlignment="center"
+                    android:textColor="@drawable/selector_text" />
+
+                <RadioButton
+                    android:id="@+id/radioButton3"
+                    android:layout_width="110dp"
+                    android:layout_height="77dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/selector_button"
+                    android:button="@null"
+                    android:onClick="MC_TrainClick"
+                    android:text="@string/button3"
+                    android:textAlignment="center"
+                    android:textColor="@drawable/selector_text" />
+            </RadioGroup>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="69dp"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/btn_stt_start"
+                android:layout_width="65dp"
+                android:layout_height="57dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/mic"
+                android:onClick="btn_stt_start"
+                tools:ignore="SpeakableTextPresentCheck,ContentDescription" />
+
+            <EditText
+                android:id="@+id/txtInMsg"
+                android:layout_width="149dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:inputType="textPersonName"
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>
