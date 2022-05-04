@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--suppress ALL -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_color"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="84dp"
+        android:layout_marginTop="5dp">
+
+        <Button
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="14dp"
+            android:layout_marginRight="14dp"
+            android:layout_marginBottom="18dp"
+            android:onClick="Newhand"
+            android:text="@string/New"
+            android:textAllCaps="false"
+
+            android:textColor="#455A64"
+            android:textSize="15sp"
+            app:backgroundTint="#a6c1ee"
+            tools:ignore="TouchTargetSizeCheck,UsingOnClickInXml" />
+
+        <ImageButton
+            android:id="@+id/btn_stt_start"
+            android:layout_width="65dp"
+            android:layout_height="57dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="13dp"
+            android:layout_marginBottom="14dp"
+            android:adjustViewBounds="true"
+            android:onClick="btn_stt_start"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/mic"
+            tools:ignore="SpeakableTextPresentCheck,ContentDescription" />
+
+        <EditText
+            android:id="@+id/txtInMsg"
+            android:layout_width="149dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="26dp"
+            android:layout_marginBottom="13dp"
+            android:layout_toEndOf="@+id/btn_stt_start"
+            android:layout_toRightOf="@+id/btn_stt_start"
+            android:inputType="textPersonName"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="2dp"
+        android:orientation="vertical">
+
+
+        <Button
+            android:id="@+id/Auto_btn"
+            android:layout_width="330dp"
+            android:layout_height="135dp"
+            android:textSize="50sp"
+            android:layout_weight="1"
+            android:onClick="Auto_btnClicked"
+            android:text="@string/Auto"
+            android:textAllCaps="false"
+
+            app:backgroundTint="#5562AC"
+            tools:ignore="UsingOnClickInXml,DuplicateSpeakableTextCheck" />
+
+        <Button
+            android:id="@+id/Passitive_btn"
+            android:layout_width="330dp"
+            android:layout_height="135dp"
+            android:textSize="50sp"
+            android:layout_weight="1"
+            android:onClick="Passitive_btnClicked"
+            android:text="@string/Manual"
+            android:textAllCaps="false"
+            app:backgroundTint="#5562AC"
+            tools:ignore="UsingOnClickInXml,DuplicateSpeakableTextCheck" />
+
+        <Button
+            android:id="@+id/Train_btn"
+            android:layout_width="330dp"
+            android:layout_height="135dp"
+            android:textSize="50sp"
+            android:layout_weight="1"
+            android:onClick="Train_btnClicked"
+            android:text="@string/Train"
+            android:textAllCaps="false"
+            app:backgroundTint="#5562AC"
+
+            tools:ignore="UsingOnClickInXml,DuplicateSpeakableTextCheck" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:textAlignment="center"
+            android:text="@string/Textbox"
+            android:textColor="#33364C"
+            android:textSize="25sp" />
+
+        <LinearLayout
+            style="?android:attr/buttonBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radioButton"
+                    android:layout_width="110dp"
+                    android:layout_height="85dp"
+                    android:layout_weight="1"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/selector_button"
+                    android:button="@null"
+                    android:checked="true"
+                    android:onClick="MC_AutoClick"
+                    android:text="@string/button1"
+                    android:textSize="25sp"
+                    android:textAlignment="center"
+                    android:textColor="@drawable/selector_text" />
+
+                <RadioButton
+                    android:id="@+id/radioButton2"
+                    android:layout_width="110dp"
+                    android:layout_height="85dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/selector_button"
+                    android:button="@null"
+                    android:onClick="MC_ManualClick"
+                    android:text="@string/button2"
+                    android:textSize="25sp"
+                    android:textAlignment="center"
+                    android:textColor="@drawable/selector_text" />
+
+                <RadioButton
+                    android:id="@+id/radioButton3"
+                    android:layout_width="110dp"
+                    android:layout_height="85dp"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/selector_button"
+                    android:button="@null"
+                    android:onClick="MC_TrainClick"
+                    android:text="@string/button3"
+                    android:textSize="25sp"
+                    android:textAlignment="center"
+                    android:textColor="@drawable/selector_text" />
+            </RadioGroup>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,67 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">JamJam</string>
+
+
+    <string name="textview1">일주일에 몇 번 운동 할 계획인가요?</string>
+    <string name="Textview1tail">주 3일 이상 운동을 추천합니다.</string>
+    <string name="RB1">7일</string>
+    <string name="RB2">5일 이상</string>
+    <string name="RB3">3일 이상</string>
+    <string name="RB4">1~2일</string>
+    <string name="TextView2">하루에 몇 분 운동 할 계획인가요?</string>
+    <string name="RB5">30분 이상</string>
+    <string name="RB6">20분 이상</string>
+    <string name="RB7">10분 이상</string>
+    <string name="RB8">미정_꾸준히</string>
+    <string name="next">next</string>
+
+
+    <string name="imageView_main">imageView_main</string>
+    <string name="mainTextNumber1">mainTextNum!</string>
+    <string name="mainTextNumber2">mainTextNum2</string>
+    <string name="mainTextNumber3">mainTextNum3</string>
+    <string name="mainTextNumber4">mainTextNum4</string>
+    <string name="mainTextNumber5">mainTextNum5</string>
+
+    //manual
+    <string name="editTextNumber1">1st</string>
+    <string name="editTextNumber2">2nd</string>
+    <string name="editTextNumber3">3rd</string>
+    <string name="editTextNumber4">4th</string>
+    <string name="editTextNumber5">5th</string>
+    <string name="textView1">1st default is 0 step</string>
+    <string name="textView2">2nd default is 0 step</string>
+    <string name="textView3">3rd default is 0 step</string>
+    <string name="textView4">4th default is 0 step</string>
+    <string name="textView5">5th default is 0 step</string>
+    <string name="RECORD">Record</string>
+
+
+    <string name="restart">restart</string>
+    <string name="New">New</string>
+    <string name="Auto">Auto</string>
+    <string name="Manual">Manual</string>
+    <string name="Train">Train</string>
+    <string name="Textbox">-------모드선택-------</string>
+    <string name="button1">Auto</string>
+    <string name="button2">Manual</string>
+    <string name="button3">Train</string>
+    <string name="content" tools:keep="@string/content">content</string>
+    <string name="Back">Back</string>
+
+
+    <string name="recycler_content">recycler_content</string>
+    <string name="modescc">modescc</string>
+    <string name="modetm">modetm</string>
+    <string name="Modetype">Modetype</string>
+
+
+    <string name="train_explain">Start~Stop시 횟수, 목표치, 가동시간</string>
+    <string name="Button">Start/Stop</string>
+    <string name="autotextview">단계설정</string>
+    <string name="mainhand_textview">finger tension measurement</string>
+    <string name="modecs">modecs</string>
+    <string name="date_time">date_time</string>
+
+
+</resources>
