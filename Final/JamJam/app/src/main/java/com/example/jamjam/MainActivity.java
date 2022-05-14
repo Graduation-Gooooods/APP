@@ -286,7 +286,7 @@ public class MainActivity extends AppCompatActivity {
     private void makeRequest(String text) {
 
         try {
-            String url = "http://114.71.220.74:2018/app/voice/" + URLEncoder.encode(text, "UTF-8");
+            String url = "http://114.71.220.74:2018/voice/" + URLEncoder.encode(text, "UTF-8");
 
             //JsonStreamParser
             StringRequest request = new StringRequest(

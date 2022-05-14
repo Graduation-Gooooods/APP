@@ -31,7 +31,11 @@ public class recycler_Sudong_Adapter extends RecyclerView.Adapter<recycler_Sudon
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         //holder.Modetype.setText(dataList.get(position).getMode());
-        holder.modescc.setText(dataList.get(position).getScc());
+        holder.modescc1.setText(dataList.get(position).getScc1());
+        holder.modescc2.setText(dataList.get(position).getScc2());
+        holder.modescc3.setText(dataList.get(position).getScc3());
+        holder.modescc4.setText(dataList.get(position).getScc4());
+        holder.modescc5.setText(dataList.get(position).getScc5());
         holder.modetm.setText(dataList.get(position).getEx_time());
         holder.s1.setText(dataList.get(position).getS1());
         holder.s2.setText(dataList.get(position).getS2());
@@ -52,7 +56,12 @@ public class recycler_Sudong_Adapter extends RecyclerView.Adapter<recycler_Sudon
 
     public class ViewHolder extends RecyclerView.ViewHolder {
        // protected TextView Modetype;
-        protected TextView modescc;
+        protected TextView modescc1;
+        protected TextView modescc2;
+        protected TextView modescc3;
+        protected TextView modescc4;
+        protected TextView modescc5;
+
         protected TextView modetm;
         protected TextView s1;
         protected TextView s2;
@@ -64,9 +73,13 @@ public class recycler_Sudong_Adapter extends RecyclerView.Adapter<recycler_Sudon
 
         public ViewHolder(View itemView) {
         super(itemView);
-          //  this.Modetype = itemView.findViewById(R.id.Modetype);
-            this.modescc = itemView.findViewById(R.id.modescc);
-            this.modetm = itemView.findViewById(R.id.modetm);
+            //  this.Modetype = itemView.findViewById(R.id.Modetype);
+        this.modescc1 = itemView.findViewById(R.id.modescc1);
+        this.modescc2 = itemView.findViewById(R.id.modescc2);
+        this.modescc3 = itemView.findViewById(R.id.modescc3);
+        this.modescc4 = itemView.findViewById(R.id.modescc4);
+        this.modescc5 = itemView.findViewById(R.id.modescc5);
+        this.modetm = itemView.findViewById(R.id.modetm);
         this.s1 = itemView.findViewById(R.id.s1);
         this.s2 = itemView.findViewById(R.id.s2);
         this.s3 = itemView.findViewById(R.id.s3);

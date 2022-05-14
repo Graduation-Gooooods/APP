@@ -3,7 +3,6 @@ package com.example.jamjam;
 public class Data {
     private String total;
     private String mode;
-    private String scc;
     private String ex_time;
     private String now_step;
     private String date_time;
@@ -17,6 +16,12 @@ public class Data {
     private String s3;
     private String s4;
     private String s5;
+    private String scc;
+    private String scc1;
+    private String scc2;
+    private String scc3;
+    private String scc4;
+    private String scc5;
 
 
     /* //private int resld;
@@ -43,11 +48,6 @@ public class Data {
         this.mode = mode;
     }
 
-    public String getScc() { return scc; }
-
-    public void setScc(String scc) {
-        this.scc = scc;
-    }
 
     public String getEx_time() {
         return ex_time;
@@ -69,6 +69,8 @@ public class Data {
         return date_time;
     }
 
+
+    //Train
     public void setDate_time(String date_time) {
         this.date_time = date_time;
     }
@@ -113,6 +115,7 @@ public class Data {
     }
 
 
+    //Manual
     public String getS1() {
         return s1;
     }
@@ -150,6 +153,27 @@ public class Data {
     public void setS5(String s5) {
         this.s5 = s5;
     }
+
+
+    //scc
+    public String getScc() { return scc; }
+    public void setScc(String scc) { this.scc = scc;}
+
+    public String getScc1() { return scc1; }
+    public void setScc1(String scc1) { this.scc1 = scc1;}
+
+    public String getScc2() { return scc2; }
+    public void setScc2(String scc2) { this.scc2 = scc2;}
+
+    public String getScc3() { return scc3; }
+    public void setScc3(String scc3) { this.scc3 = scc3;}
+
+    public String getScc4() { return scc4; }
+    public void setScc4(String scc4) { this.scc4 = scc4;}
+
+    public String getScc5() { return scc5; }
+    public void setScc5(String scc5) { this.scc5 = scc5;}
+
 }
 
 

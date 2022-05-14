@@ -117,10 +117,6 @@
                 android:textSize="15sp"
                 android:textStyle="bold"
                 android:layout_marginLeft="8dp" />
-
-
-
-
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
@@ -131,11 +127,11 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="scc"
+                android:text="scc1"
                 android:textColor="@color/sub_text_color"
                 android:textSize="12sp" />
             <TextView
-                android:id="@+id/modescc"
+                android:id="@+id/modescc1"
                 android:layout_width="0px"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
@@ -144,6 +140,76 @@
                 android:text="-"
                 android:textSize="15sp"
                 android:textStyle="bold" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="scc2"
+                android:textColor="@color/sub_text_color"
+                android:textSize="12sp" />
+            <TextView
+                android:id="@+id/modescc2"
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_weight="1"
+                android:text="-"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="scc3"
+                android:textColor="@color/sub_text_color"
+                android:textSize="12sp" />
+            <TextView
+                android:id="@+id/modescc3"
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_weight="1"
+                android:text="-"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="scc4"
+                android:textColor="@color/sub_text_color"
+                android:textSize="12sp" />
+            <TextView
+                android:id="@+id/modescc4"
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_weight="1"
+                android:text="-"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="scc5"
+                android:textColor="@color/sub_text_color"
+                android:textSize="12sp" />
+            <TextView
+                android:id="@+id/modescc5"
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_weight="1"
+                android:text="-"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -167,7 +233,6 @@
                 android:layout_height="wrap_content"
                 android:text="-"
                 android:textSize="12sp" />
-
+            </LinearLayout>
         </LinearLayout>
     </LinearLayout>
-</LinearLayout>
